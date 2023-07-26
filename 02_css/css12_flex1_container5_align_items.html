@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4일차...</title>
+     
+       
+    <style>
+     .container{
+            background-color: powderblue;
+            height: 600px;
+
+            display: flex;
+            flex-direction: row;
+
+            /* 주축인 row에 대한 교차축 정렬
+            stretch가 기본으로, 아이템을 늘려서 렌더링*/
+
+            /* flex-start, center, flex-end */
+            align-items: center;
+           
+            
+    }
+	.item{
+		background-color: tomato;
+		color:white;
+		border:1px solid white;
+        width: 300px;
+	}
+
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+
+</html>
