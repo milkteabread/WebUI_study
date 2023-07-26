@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8일차...</title>
+
+    <script>
+
+        // 함수(function)
+        
+
+        // 가. default 파라미터: undefined 방지
+         function fun2(n, n2){
+            console.log("fun2", n, n2);
+         }
+         
+         fun2(2467, "밀빵");  // fun2 2467 밀빵
+         fun2();             // fun2 1 2
+         fun2(71);           // fun2 71 2
+
+
+         // 나. 가변인자 (...변수)
+         function fun3(n,n2,...n3){
+            console.log("fun3",n,n2,n3);
+         }
+         fun3(10,20,30);
+         fun3(10,20,30,40,50,60);
+
+
+         // 다. 혼합(default 파라미터 + 가변인자)
+         function fun4(n,n2=0,...n3){
+            console.log("fun4",n,n2,n3.toString());
+         }
+         fun4(10);  // fun4 10 0
+         fun4(10,20,30);  // fun4 10 20 [30]
+         fun4(10,20,30,40,50);  // fun4 10 20 [30,40,50]
+
+        
+
+
+
+        
+        
+    </script>
+      
+    
+</head>
+
+<body>
+    <p>샤랄라...</p>
+    
+</body>
+
+</html>

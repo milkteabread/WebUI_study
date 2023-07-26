@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7일차...</title>
+
+    <script>
+
+        // Boolean 객체: 논리 데이터 관리
+
+        // 1. 생성방법
+
+        // 가. false로 처리되는 데이터
+        var n = new Boolean(0);
+        var n = new Boolean("");
+        var n = new Boolean(null);
+        var n = new Boolean(undefinded);
+        var n = new Boolean(NaN);
+
+        console.log(n); // Boolean
+        console.log(n.toString()); // false
+        console.log(n.valueOf()); // false
+
+        if(n.toString()){
+            console.log("거짓 - !!");   // 문자열 "false"라서 true 처리
+        }
+
+        if(n.valueOf()){  
+            console.log("거짓 - !!");  // real false라서 출력 안됨
+        }
+
+        // 나. true로 처리되는 데이터
+        var n = new Boolean(71);
+        var n = new Boolean("ty");
+        console.log(n.toString()); // "true"
+        console.log(n.valueOf());  // true
+ 
+    </script>
+      
+    
+</head>
+
+<body>
+    <p>샤랄라...</p>
+    
+</body>
+
+</html>
