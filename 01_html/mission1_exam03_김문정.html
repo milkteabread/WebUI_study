@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>태용님 찬냥</title>
+</head>
+<body>
+    <!-- 사용자 데이터 입력 태그 -->
+    <h1>Payment Form</h1>
+     <form action="target.html">
+      Required fields are followed by *
+    <h2>Contact Information</h2>
+
+       Name: * <input type="text" name="username" value="smith"><br><br>
+       
+       <fieldset>
+        <legend>Gender * :</legend>
+        <br>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female
+        <input type="radio" name="gender" value="other">Other<br><br>
+      </fieldset>
+
+      <br>Address: <br>
+      <textarea name="message" rows="10" cols="30" >Enter the address
+        </textarea><br><br>
+
+        Email: * <input type="email" name="m_email" value="smith@gmail.com"><br><br>
+        Pincode: * <input type="text" name="code" value="123456"><br><br>
+       
+       <h2>Payment Information</h2>
+       Card Type: *
+       <select id="card" name="card" size="0">
+         <option value="ty">--Select a Card Type--</option>
+         
+       </select><br>
+       Card number: * <input type="text" name="num" value="1111-2222-3333-4444"><br>
+       Expiration Date: *<input type="date" name="m_date"> <br>
+       CVV: * <input type="text" name="cvv"><br><br>
+
+       <input type="submit" value="Pay now">
+      
+
+       
+
+        
+    </form>
+</body>
+</html>
